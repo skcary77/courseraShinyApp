@@ -21,29 +21,10 @@ shinyUI(fluidPage(
                 mainPanel(
                         dygraphOutput("chartOut"),
                         hr(),
-                        fluidRow("Red shading denotes U.S. Economic Recessions"),
-                        fluidRow("Click and drag on chart to zoom in. Double-click to reset zoom. Use the slider below the chart to pan/zoom.")
+                        fluidRow("*Red shading denotes U.S. Economic Recessions"),
+                        fluidRow("*Click and drag on chart to zoom in. Double-click to reset zoom. Use the slider below the chart to pan/zoom."),
+                        fluidRow("*Date and Value are displayed in the upper right hand portion of the chart.")
                 )
         )
 ))
-
-
-
-
-
-
-
-# shinyUI(fluidPage(
-#         
-#         
-#         
-#         # Copy the line below to make a select box 
-#         selectInput("chart", label = h3("Select Chart"), 
-#                     choices = c("Financial Conditions", "Unemployment Claims", "Unemployment Rate"), 
-#                     selected = "Financial Conditions"),
-#         
-#         hr(),
-#         fluidRow(dygraphOutput("chartOut"))
-#         
-# ))
 
